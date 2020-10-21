@@ -23,6 +23,7 @@ To put the rM2 in recovery, you will need:
 * connect the pogo pins to the tablet and to the host usb
 * if the device does not start on its own, press the Power Button
 * you should see a new device *USB HID v1.10 Device [Freescale SemiConductor Inc  SE Blank ULT1]*
+* remove the pulldown resistor (disconnect B8)
 * run `./imx_usb`
 * should see *USB Mass Storage device detected*
 * should see a new mountable block device
