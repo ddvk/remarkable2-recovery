@@ -8,6 +8,8 @@ Tools for recovery (works only under Linux)
 To put the rM2 in recovery, you will need:
 - USB-C breakout board
 - Pogo pin adapter to usb
+    the pogo pins are as follows,  when viewed from the side, device facing up (VBUS is near the usb-c)
+    `GND,ID,D+,D-,VBUS`
 - [imx_usb_loader](https://github.com/boundarydevices/imx_usb_loader) a binary is included, but feel free to compile it
 
 
