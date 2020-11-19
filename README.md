@@ -14,8 +14,9 @@ To put the rM2 in recovery, you will need:
 - [imx_usb_loader](https://github.com/boundarydevices/imx_usb_loader) a binary is included, but feel free to compile it
 
 
-![Pogo](images/pogo1.jpg)
-![USB-C Breakout](images/usb1.jpg)
+![Pogo](https://i.imgur.com/yPymkBx.jpeg)
+![USB-C Breakout](https://i.imgur.com/YqYELeg.jpeg)
+![Connection](https://i.imgur.com/RGerZyp.jpeg)
 
 
 ## Recovery Mode
