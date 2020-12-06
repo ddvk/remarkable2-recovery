@@ -2,7 +2,6 @@
 
 Tools for recovery (works only under Linux)
 
-
 ## Prerequisites
 
 To put the rM2 in recovery, you will need:
@@ -33,6 +32,7 @@ To put the rM2 in recovery, you will need:
 * should see *USB Mass Storage device detected*
 * should see a new mountable block device
 
+## Notes
 
-
-
+- B8 has to be connected to the same ground as the Pogo GND pin
+- The ID pin on Pogo connector is not connected to anything
