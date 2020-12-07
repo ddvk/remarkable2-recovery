@@ -22,7 +22,7 @@ To put the rM2 in recovery, you will need:
 * run `dmesg -w` on your host to monitor
 * power off the device
 * connect the USB-C breakout board
-*   pull down **B8** (connect a 10K resistor to GND)
+*   pull down **B8** (connect B8 over a 10K resistor to B1)
 * connect the pogo pins to the tablet and to the host usb
 * **make sure the connection is good, use a short good, different cable, etc**
 * if the device does not start on its own, press the Power Button
@@ -32,7 +32,3 @@ To put the rM2 in recovery, you will need:
 * should see *USB Mass Storage device detected*
 * should see a new mountable block device
 
-## Notes
-
-- B8 has to be connected to the same ground as the Pogo GND pin
-- The ID pin on Pogo connector is not connected to anything
