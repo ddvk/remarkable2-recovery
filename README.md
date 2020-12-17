@@ -17,7 +17,7 @@ To put the rM2 in recovery, you will need:
 ![USB-C Breakout](https://i.imgur.com/YqYELeg.jpeg)
 ![Connection](https://i.imgur.com/RGerZyp.jpeg)
 
-[Parts](parts.md)
+## [Parts](parts.md)
 
 
 ## Recovery Mode
