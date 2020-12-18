@@ -2,7 +2,7 @@
 
 Tools for recovery (works only under Linux)
 
-## Prerequisites
+## [Parts and prerequisites](parts.md)
 
 To put the rM2 in recovery, you will need:
 - USB-C breakout board
@@ -12,15 +12,7 @@ To put the rM2 in recovery, you will need:
 
 - [imx_usb_loader](https://github.com/boundarydevices/imx_usb_loader) a binary is included, but feel free to compile it
 
-
-![Pogo](https://i.imgur.com/yPymkBx.jpeg)
-![USB-C Breakout](https://i.imgur.com/YqYELeg.jpeg)
-![Connection](https://i.imgur.com/RGerZyp.jpeg)
-
-## [Parts](parts.md)
-
-
-## Recovery Mode
+## Guide
 * run `dmesg -w` on your host to monitor
 * power off the device
 * connect the USB-C breakout board
@@ -30,7 +22,19 @@ To put the rM2 in recovery, you will need:
 * if the device does not start on its own, press the Power Button
 * you should see a new device *USB HID v1.10 Device [Freescale SemiConductor Inc  SE Blank ULT1]*
 * remove the pulldown resistor (disconnect B8)
-* run `./imx_usb`
+* run `sudo ./imx_usb` or add the [udev](udev.md) rules to use it without `sudo`
 * should see *USB Mass Storage device detected*
 * should see a new mountable block device
+
+## Next steps
+* to recover the ssh password, mount the home partition `grep Developer <mountpoint>/root/.config/remarkable/xochitl.conf`
+* TODO not tested, but something like `dd if=raw of=/dev/mountedroot1`
+
+## What the setup looks like
+![Pogo](https://i.imgur.com/yPymkBx.jpeg)
+![USB-C Breakout](https://i.imgur.com/YqYELeg.jpeg)
+![Connection](https://i.imgur.com/RGerZyp.jpeg)
+
+
+
 
