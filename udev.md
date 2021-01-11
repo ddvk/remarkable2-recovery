@@ -27,5 +27,5 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="0525", ATTRS{idProduct}=="a4a5", MODE="0666"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="18d1", ATTRS{idProduct}=="0d02", MODE="0666"
 
 
-put the above udev rules into: `/etc/udev/rules.d/99-uuu.rules`
+put the above udev rules into: `/etc/udev/rules.d/99-uuu.rules`  
 run: `sudo udevadm control --reload-rules`
