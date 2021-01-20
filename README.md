@@ -34,7 +34,16 @@ To put the rM2 in recovery, you will need:
 ![Pogo](https://i.imgur.com/yPymkBx.jpeg)
 ![USB-C Breakout](https://i.imgur.com/YqYELeg.jpeg)
 ![Connection](https://i.imgur.com/RGerZyp.jpeg)
+![Connection with UART 1](rM2-Uart-1.jpg)
+![Connection with UART 2](rM2-Uart-2.jpg)
 
+## UART
 
+UART6 TX is exposed via the pogo pins ID pin.
 
+You can connect an FDTI chip (3V3) to ID pin to get UART at 115200 baud.
 
+For more details checkout the wiki: https://remarkablewiki.com/tech/rm2_otg_pogo
+
+For details building u-boot and Linux to support this checkout
+[meta-freescale-3rdparty](https://github.com/Freescale/meta-freescale-3rdparty).
