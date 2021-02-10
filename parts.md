@@ -5,3 +5,6 @@
 [microUSB](https://www.aliexpress.com/item/32827910858.html)  
 [Jumper Wires](https://www.aliexpress.com/item/4000099476548.html)  
 
+# for 3d printing
+[Holder](assets/holder.FCStd)  
+
