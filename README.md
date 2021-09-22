@@ -5,7 +5,7 @@ Tools for recovery (works only under Linux)
 ## [Parts and prerequisites](parts.md)
 
 To put the rM2 in recovery, you will need:
-- USB-C breakout board
+- USB-C breakout board (you could probably use USB-C to Audio adapter and plug headpholnes to short B8)
 - Pogo pin adapter to usb
     the pogo pins are as follows,  when viewed from the side, device facing up (VBUS is near the usb-c)
     `GND,ID,D+,D-,VBUS`
