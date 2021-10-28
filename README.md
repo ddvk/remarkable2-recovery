@@ -28,7 +28,15 @@ To put the rM2 in recovery, you will need:
 
 ## Next steps
 * to recover the ssh password, mount the home partition `grep Developer <mountpoint>/root/.config/remarkable/xochitl.conf`
+* to find a mountpoint run `mount | grep home`
 * TODO not tested, but something like `dd if=raw of=/dev/mountedroot1`
+
+## Troubleshooting
+* It is **very** important to use a pogo connector because it is almost impossible to achieve a stable connection in another way.
+* Only if the device is in recovery mode there will be messages in the `dmesg` output.
+* If you see messages like `usb 1-1: device descriptor read/64, error -71`, most likely it means that the device is in recovery mode and you have a poor connection to the pogo port.
+* B8 is on the bottom part of the USB port. So screen side is A and bottom side is B.
+* if not sure that device is powered off, try to connect the device to the charger, the screen should blink, disconnect it from the charger, hold the power button for at least 15 seconds.
 
 ## What the setup looks like
 ![Pogo](https://i.imgur.com/yPymkBx.jpeg)
