@@ -17,7 +17,7 @@ To put the rM2 in recovery, you will need:
 * power off the device
 * connect the USB-C breakout board
 *   pull down **B8** (connect B8 over a 10K resistor to B12)
-* connect the pogo pins to the tablet and to the host usb
+* connect the pogo pins to the tablet and to the host usb **Make sure the orientation is correct, you risk frying your device if you connect the pins in the wrong order**
 * **make sure the connection is good, use a short good, different cable, etc**
 * if the device does not start on its own, press the Power Button
 * you should see a new device *USB HID v1.10 Device [Freescale SemiConductor Inc  SE Blank ULT1]*
