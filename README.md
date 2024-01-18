@@ -51,7 +51,7 @@ UART6 TX is exposed via the pogo pins ID pin.
 
 You can connect an FDTI chip (3V3) to ID pin to get UART at 115200 baud.
 
-For more details checkout the wiki: https://remarkablewiki.com/tech/rm2_otg_pogo
+For more details checkout the wiki: https://web.archive.org/web/20230619082431/https://remarkablewiki.com/tech/rm2_otg_pogo
 
 For details building u-boot and Linux to support this checkout
 [meta-freescale-3rdparty](https://github.com/Freescale/meta-freescale-3rdparty).
