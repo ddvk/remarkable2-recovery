@@ -34,6 +34,7 @@ To put the rM2 in recovery, you will need:
 ## Troubleshooting
 * It is **very** important to use a pogo connector because it is almost impossible to achieve a stable connection in another way.
 * Only if the device is in recovery mode there will be messages in the `dmesg` output.
+* If you have red messages like "Cannot enable. Maybe the USB cable is bad?" or your pogo pins contacting makes normal boot with female USB-C breakout board, you could change USB-C cable to 3.2 gen 2 that supports data transfer or use male USB-C breakout board
 * If you see messages like `usb 1-1: device descriptor read/64, error -71`, most likely it means that the device is in recovery mode and you have a poor connection to the pogo port.
 * B8 is on the bottom part of the USB port. So screen side is A and bottom side is B.
 * if not sure that device is powered off, try to connect the device to the charger, the screen should blink, disconnect it from the charger, hold the power button for at least 15 seconds.
