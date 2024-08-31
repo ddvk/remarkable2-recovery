@@ -14,7 +14,7 @@ To put the rM2 in recovery, you will need:
 
 ## Guide
 * run `dmesg -w` on your host to monitor
-* power off the device
+* power off the device (hold the power button for 10 seconds)
 * connect the USB-C breakout board
 *   pull down **B8** (connect B8 over a 10K resistor to B12)
 * connect the pogo pins to the tablet and to the host usb **Make sure the orientation is correct, you risk frying your device if you connect the pins in the wrong order**
