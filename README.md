@@ -39,12 +39,11 @@ To put the rM2 in recovery, you will need:
 * if not sure that device is powered off, try to connect the device to the charger, the screen should blink, disconnect it from the charger, hold the power button for at least 15 seconds.
 
 ## What the setup looks like
-![Pogo](rM2-Pogo-1.jpg)
-![USB-C Breakout Board 1](rM2-USBC-Board-1.jpg)
-![USB-C Breakout Board 2](rM2-USBC-Board-2.jpg)
-![Connection 1](rM2-Set-1.jpg)
-![Connection 2](rM2-Set-2.jpg)
-![Connection 3](rM2-Set-3.png)
+![Pogo](images/rM2-Pogo-1.jpg)
+![USB-C Breakout Board 1](images/rM2-USBC-Board-1.jpg)
+![USB-C Breakout Board 2](images/rM2-USBC-Board-2.jpg)
+![Connection 1](images/rM2-Set-1.jpg)
+![Connection 2](images/rM2-Set-2.png)
 
 ## UART
 
