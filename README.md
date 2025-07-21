@@ -29,7 +29,11 @@ To put the rM2 in recovery, you will need:
 ## Next steps
 * to recover the ssh password, mount the home partition `grep Developer <mountpoint>/root/.config/remarkable/xochitl.conf`
 * to find a mountpoint run `mount | grep home`
-* TODO not tested, but something like `dd if=raw of=/dev/mountedroot1`
+* your `dmesg` output will show the letter assigned to the block device (`sdc` will be used for the following examples)
+* Open the `uboot.env` file from the root of the `BOOT` partition in a text editor. You'll see something like `active_partition=3`. This indicates that your remarkable boots from sdc3, so we'll use sdc2 to restore the `sdc3` partition. 
+* Backup the working system partition using `sudo dd if=/dev/sdc2 of=rm2-sdc2.raw bs=4096 status=progress` or `sudo dd if=/dev/sdc3 of=rm2-sdc3.raw bs=4096 status=progress`.
+* Restore the `sdc3` partition with the backup of `sdc2` using `sudo dd if=rm2-sdc2.raw of=/dev/sdc3 bs=4096 status=progress` assuming your active partition is `3`. If your active partition is `2` restore it using `sudo dd if=rm2-sdc3.raw of=/dev/sdc2 bs=4096 status=progress`
+* You can instead use [codexctl](https://github.com/Jayy001/codexctl) to download an update file for your device, and extract the image from it. You can then use `dd` to replace the active partition with the stock partition.
 
 ## Troubleshooting
 * It is **very** important to use a pogo connector because it is almost impossible to achieve a stable connection in another way.
