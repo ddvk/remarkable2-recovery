@@ -21,7 +21,7 @@ To put the rM2 in recovery, you will need:
 * **make sure the connection is good, use a short good, different cable, etc**
 * if the device does not start on its own, press the Power Button. The screen may flash and say it's starting. After that, the screen will no longer update.
 * you should see a new device *USB HID v1.10 Device [Freescale SemiConductor Inc  SE Blank ULT1]*
-* remove the pulldown resistor (disconnect B8)
+* **remove the pulldown resistor (disconnect B8)** *Your device will restart automatically in a loop if you miss this step*
 * run `sudo ./imx_usb` or add the [udev](udev.md) rules to use it without `sudo`
 * should see *USB Mass Storage device detected*
 * should see a new mountable block device
